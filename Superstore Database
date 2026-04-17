@@ -1,3 +1,4 @@
+--This creates the superstore table and loads the data 
 CREATE TABLE superstore (
     item_id INTEGER PRIMARY KEY,
     item_name TEXT,
@@ -27,3 +28,22 @@ VALUES
     
     
 -- © Copyright 2025 Break Into Tech  --
+
+
+
+
+SELECT *
+FROM superstore
+ORDER BY price;
+-- Task 1 Complete
+SELECT AVG(price)
+FROM superstore;
+--Task 2 Complete
+SELECT SUM(price)
+FROM superstore
+WHERE category = 'Kitchen Supplies';
+--Task 3 Complete
+SELECT AVG(price)
+FROM superstore
+WHERE category = 'Furnishings';
+--Task 4 Complete
